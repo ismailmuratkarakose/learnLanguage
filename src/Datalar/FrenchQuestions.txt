@@ -1,0 +1,30 @@
+1*Quel est votre nom?*A)Bonjour,trouver grâce et vous *B) Mon nom est John *C)je suis originaire de Turquie*D)je suis âgé de 21 ans*B
+2*Quel est votre nom de famille*A)Non,je ne suis pas*B)Mon nom est jessica*C)Bonjour*D)Mon nom de famille est Wilson*D
+3*Quelle heure est-il?*A)il est à moitié passé*B)il est*C)Elle est de ans*D)Mon père est*A
+4*Comment êtes-vous?*A)bien, merci*B)de Nice de vous rencontrer*C)Bon Matin!*D)Let's go*A
+5*Êtes-vous français?*A)Oui, je l'est*B)Oui, il est*C)Oui je suis*D)Oui, il sont*C
+6*Quelle est votre nationalité?*A)je suis de l'Allemagne*B)je suis un médecin;*C)je suis turc*D)Oui c'est*C
+7*Où êtes-vous?*A)je suis de la Turquie*B)C'est un stylo*C)Non, il n'est pas*D)je suis anglais*C
+8*Quel est votre travail?*A)je suis de la Turquie*B)je suis un étudiant*C)Non, il n'est pas*D)je suis anglais*A
+9*Que faites-vous?*A)Les enfants ont mangé de hamburger*B)je suis en train de manger le hamburger*C)je mange hamburger*D)j'ai manger des hamburger*B
+10*Qu'avez-vous fait la nuit dernière?*A)je suis café*B)j'aime aller au café*C)je vais à café*D)je suis allé à café*D
+11*Où êtes-vous né?*A)je suis né à Izmir*B)j'habite à Izmir*C)je suis né à partir de Izmir*D)je suis à Izmir*A
+12*elle Était une grande chanteuse?*A)Oui, elle est *B)Elle est un grand chanteur*C)Oui, elle a*D)Oui, il est*B
+13*ont-ils planifier les vacances de Ftance?*A)j'ai prévu des vacances en France*B)Ils ont prévu des vacances en France*C)planifier les vacances à paris*D) j'ai l'intention des vacances en France*B
+14*.......... à l'hôtel,la semaine dernière.*A)Ils ne le vois pas*B)qu'Ils n'avaient pas le voir*C)Ils ne peuvent pas le voir*D)Ils n'étaient pas le voir*
+15*C'est le ......chose que j'ai jamais fait.*A)plus difficile*B)les plus durement*C)*D)le plus dur*B
+16*Avez-vous déjà été à la Turquie?*A)Oui,j'ai été en Turquie*B)avez-vous-fait*C)avez-vous-fait*D)avez-vous avez-fait*D
+17*Où ........ votre nouvelle robe .......?*A)avez-vous avez-fait*B)avez-vous-fait*C)avez-vous-fait*D)avez-vous avez-fait*A
+18*Ma mère,Lisa ...... par mon père,Johnny la semaine dernière.*A)les rideaux raccourcis*B)ont les rideaux raccourcis*C)obtenir les rideaux pour shortaned*D)faire des rideaux shortaned*
+19*j'ai organisé ......dîner avec Barbara, jeudi.*A)*B)*ayant C)*D)*Un*A
+20*j'....... TV quand le téléphone a sonné.*A)regardé*B)a regarder*C)sont à regarder*D)ont regardé*B
+21*Si ...... vous avez été à venir, je l'aurais fait cuire un café!*A) je voudrais savoir*B), je l'aurais su*C)j'avais su*D)j'avais connu*C
+22*je n'avais jamais vu avant, et ...... Je savais exactement quoi faire.*A)toujours B)*C)*D)même*B
+23*je ne comprenais pas au début, mais ensuite ......et la réponse était claire.*A)il m'a expliqué*B)il l'a expliqué à moi*C)il a expliqué qu'il me*D)il m'a expliqué qu'il*C
+24*Où est John? Je souhaite qu'il ....... et obtenir ici.*A)va dépêcher*B)speedé*C, dépêchez-vous*D)sont accourant*C
+25*Alison est agréable, mais elle est tellement fouineuses. Je souhaite qu'elle ......autant de questions.*A)n'est pas en train de demander*B)ne pas poser*C)ne pas poser*D)ne serait pas en train de demander*D
+26*Même tout à fait à la fin du 20e siècle, de nombreux hommes supposé que l'entrée dans certaines professions était leur ...... la droite.*Indépendante*B)ne pas rendre de comptes*C)adéquates*D)exclusif*D
+27*Par la cartographie équatoriale précipitations depuis l'an 800,les scientifiques ont ..... comment climat tropical peut changer au cours du siècle suivant.*A)prises*B)mettre de côté*C)porté vers le bas*D)compris*D
+28*Le montant total de militaires ........ par tous les pays du monde en 2010 était de 1,63 $billion de dollars, ce qui équivaut à $236 pour chaque personne sur la planète*A)la diversité*B)*C)les dépenses*D)compris*C
+29*En dépit de nombreuses recherches sur le sujet, nous avons encore seulement ....... savoir comment et pourquoi les tornades se forment.*A)probable*B)vraiment*C)dans l'idéal,*D)partiellement*D
+30*La religion des Hittites était basée sur ...... d'une déesse du soleil et une tempête de dieu.*A)merveille*B)l'invention*C)le culte*D)*C

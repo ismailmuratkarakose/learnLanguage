@@ -1,0 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+	<title>LearnLanguage</title>
+</h:head>
+<style>
+body {
+	background-image:
+		url(http://www.psdgraphics.com/file/light-blue-halftone-pattern.jpg);
+	background-size: 2000px 1600px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: left;
+}
+</style>
+<h:body style="font: italic bold 12px Georgia, serif;">
+	<h:panelGrid columns="1" id="grid" cellpadding="5">
+		<img src="http://i.hizliresim.com/o3GYbk.png"
+			style="width: 700px; height: 120px;" />
+		<div id="page">
+			<h:outputLabel />
+			<h:form>
+				<p:menubar style="font: bold 17px Georgia, serif;">
+					<p:menuitem value="Giris Yap"
+						actionListener="#{templateBean.gotoIndexPage}"></p:menuitem>
+					<p:menuitem value="Egitim"
+						actionListener="#{templateBean.gotoLanguagePage}"></p:menuitem>
+					<p:menuitem value="Soru Coz" outcome="/LanguageEducation.xhtml"></p:menuitem>
+					<p:menuitem value="Randevu" outcome="/Appointment.xhtml"></p:menuitem>
+					<p:menuitem value="Comment" outcome="/Comment.xhtml"></p:menuitem>
+					<p:menuitem value="Profil" outcome="/Profile.xhtml"></p:menuitem>
+				</p:menubar>
+			</h:form>
+			<p:panel id="panel" header="LearnLanguage" style="width:1300px;">
+				<ui:insert name="content">
+				</ui:insert>
+			</p:panel>
+		</div>
+	</h:panelGrid>
+</h:body>
+</html>

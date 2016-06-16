@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head></h:head>
+
+<h:body>
+	<ui:composition template="Template.xhtml">
+		<ui:define name="content">
+			<h:form id="form">
+				<p:carousel value="#{profileBean.userList}" headerText="My Profile"
+					var="aa" itemStyle="text-align:center" responsive="true">
+					<p:panelGrid columns="1" style="width:100%;margin:10px 0px"
+						columnClasses="label,value" layout="grid"
+						styleClass="ui-panelgrid-blank">
+						<p:panelGrid columns="2">
+						<f:facet name="header">
+							<p:graphicImage
+								url="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_male2-512.png" height="150px;" />
+						</f:facet>
+						<h:outputText value="Id:" />
+						<h:outputText value="#{aa.userId}" />
+						<h:outputText value="Isim:" />
+						<h:outputText value="#{aa.userName}" />
+						<h:outputText value="E-mail:" />
+						<h:outputText value="#{aa.email}" style="color:#dd0000" />
+						<h:outputText value="Kullanici Tipi:" />
+						<h:outputText value="#{aa.userType=='S'? 'Student' : 'Teacher'}" />
+						<h:outputText value="Seviye:" />
+						<h:outputText value="#{aa.level}" />
+						</p:panelGrid>
+						
+					</p:panelGrid>
+
+					<f:facet name="footer">
+        </f:facet>
+				</p:carousel>
+
+			</h:form>
+		</ui:define>
+	</ui:composition>
+</h:body>
+</html>

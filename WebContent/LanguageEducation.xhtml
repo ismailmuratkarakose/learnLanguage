@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+
+</h:head>
+<h:body>
+	<ui:composition template="Template.xhtml">
+		<ui:define name="content">
+			<h:form id="form">
+				<p:carousel id="carousel" value="#{languageEducationBean.words}" 
+					headerText="Learning cards" var="word" 
+					itemStyle="height:250px;text-align:center" numVisible="3"
+					autoPlayInterval="7000" easing="easeOutBounce" style="width:660px"
+					cricular="true">
+					<h:panelGrid columns="2" style="width:100%"
+						columnClasses="label,value">
+						<f:facet name="header">
+							<p:graphicImage url="#{word.imagePath}" />
+						</f:facet>
+						<h:outputText value="" />
+						<h:outputText value="#{word.word}" />
+
+						<h:outputText value="" />
+						<h:outputText value="#{word.mean}" />
+
+						<f:facet name="footer">
+							<p:commandButton update=":form:carDetail"
+								oncomplete="PF('carDialog').show()" icon="ui-icon-search">
+								<f:setPropertyActionListener value="#{word}"
+									target="#{languageEducationBean.selectedWord}" />
+							</p:commandButton>
+						</f:facet>
+					</h:panelGrid>
+				</p:carousel>
+				<p:dialog header="Car Info" widgetVar="carDialog" modal="true"
+					showEffect="fade" hideEffect="fade" resizable="false">
+					<p:outputPanel id="carDetail" style="text-align:center;">
+						<p:panelGrid columns="2" columnClasses="label,value">
+							<f:facet name="header">
+								<p:graphicImage
+									url="#{languageEducationBean.selectedWord.imagePath}" />
+							</f:facet>
+
+							<h:outputText value="Kelime" />
+							<h:outputText
+								value="#{languageEducationBean.selectedWord.word}" />
+
+							<h:outputText value="Anlamı" />
+							<h:outputText
+								value="#{languageEducationBean.selectedWord.mean}" />
+							<h:outputText value="Cumle icinde kullanımı" />
+							<h:outputText
+								value="#{languageEducationBean.selectedWord.sentence}" />
+						</p:panelGrid>
+					</p:outputPanel>
+				</p:dialog>
+				<p:commandButton value="Lets go to the questions"
+					actionListener="#{languageEducationBean.gotoTheTestPage}"
+					icon="ui-icon-arrowthickstop-1-e">
+				</p:commandButton>
+			</h:form>
+		</ui:define>
+	</ui:composition>
+</h:body>
+</html>

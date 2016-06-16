@@ -1,0 +1,34 @@
+1*What is your name?*A)Hello,find thanks and you*B)My name is John*C)I am from Turkey*D)I am 21 years old*B
+2*What is your surname*A)No,I am not*B)My name is jessica*C)Hello*D)My surname is Wilson*D
+3*What time is it?*A)it is half past 7*B)he is 7*C)She is 7 years old*D)My father is 7*A 
+4*How are you?*A)Fine thanks*B)Nice to meet you*C)Good Morning!*D)Let's go*A
+5*Are you French?*A)Yes I is*B)Yes he is*C)Yes I am*D)Yes he are*C
+6*What is your nationality?*A)I am from Germany*B)I am a doctor*C)I am Turkish*D)Yes it is*C
+7*Where are you from?*A)I am from Turkey*B)This is a pen*C)No it isn't*D)I am English*A
+8*What is your job?*A)I am from Turkey*B)I am a student*C)No it isn't*D)I am English*A
+9*What are you doing?*A)The children ate hamburger*B)I am eating hamburger*C)I eat hamburger*D)I eating hamburger*B
+10*What did you do last night?*A)I am cafe*B)I like go to cafe*C)I go to cafe*D)I went to cafe*D
+11*Where were you born?*A)I was born in Izmir*B)I live in Izmir*C)I was born from in Izmir*D)I am in Izmir*A
+12*Was she a great singer?*A)Yes she is *B)She is a great singer*C)Yes she was*D)Yes he is*C
+13*Did they plan the holiday to Ftance?*A)I planned the holiday to France*B)They planned the holiday to France*C)They plan the holiday to paris*D) I plan the holiday to France*B
+14*.......... at the hotel,last week.*A)They didn't see him*B)They hadn't see him*C)They can't see him*D)They weren't see him*A
+15*This is the ......thing I have ever done.*A)harder*B)hardest*C)hard*D)more hard*B
+16*Have you ever been inTurkey?*A)Yes,I have been in Turkey*B)did you get-to made*C)did you get-made*D)did you have-to made*A
+17*Where ........ your new dress .......?*A)did you have-made*B)did you get-to made*C)did you get-made*D)did you have-to made*A
+18*My mother,Lisa ...... by my father,Johnny last week.*A)had the curtains shortened*B)have the curtains shortened*C) get the curtains to shortaned*D)make curtains shortaned*A
+19*I have arranged ......dinner with Barbara on Thursday.*A)to have*B)having*C)have had*D)had*A
+20*I ....... TV when the telephone rang.*A)watched*B)was watching*C)are watching*D)have watched*B
+21*If ...... you were coming, I would have baked a cafe!*A) I would know*B)I would have known*C)I had known*D)I had had known*C
+22*I had never seen it before, and ...... I knew exactly what to do.*A)still*B)yet*C)just*D)even*B
+23*I didn't understand at first, but then ......and the answer was clear.*A)he explained me*B)he explained it me*C)he explained it to me*D)he explained me it*C
+24*Where’s John? I wish that he ....... and get here.*A)will hurry up*B)hurried up*C)would hurry up*D)are hurrying up*C
+25*Alison’s nice, but she’s so nosey. I wish she ......so many questions.*A)isn't asking*B)won't asking*C)doesn't asking*D)wouldn't asking*D
+26*Even quite late in the 20th century, many men assumed that entry into certain professions was their ...... right.*A)independent*B)unaccountable*C)adequate*D)exclusive*D
+27*By mapping equatorial rainfall since 800 AD,scientists have ..... how tropical weather may change over the next century.*A)taken out*B)put aside*C)brought down*D)figured out*D
+28*The total amount of military ........ by all the countries of the world in 2010 was $1.63 trillion, which is equivalent to $236 for every person on the planet*A)diversity*B)requirement*C)expenditure*D)dimension*C
+29*In spite of much research into the subject, we still only ....... know how and why tornadoes form.*A)likely*B)truly*C)ideally*D)partially*D
+30*The religion of the Hittites was based upon ...... of a sun goddess and a storm god.*A)wonder*B)invention*C)worship*D)display*C
+
+
+
+

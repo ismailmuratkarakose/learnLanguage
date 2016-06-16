@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head></h:head>
+
+<h:body>
+	<ui:composition template="Template.xhtml">
+		<ui:define name="content">
+			<h:form id="form">
+				<h:panelGrid columns="2" id="testGrid" cellpadding="5">
+					<p:outputPanel>
+						<h:outputLabel value="Question #{testBean.cntOfQuestion}:"
+							style="font-size:16px;" />
+					</p:outputPanel>
+					<p:outputPanel>
+						<h:outputLabel value="#{testBean.question.questionPart}"
+							style="font-size:19px;" />
+					</p:outputPanel>
+					<p:commandButton id="id"
+						value="#{testBean.question.questionOption1}"
+						actionListener="#{testBean.firstOptionChoose}"
+						style="width: 300px; text-align: left" />
+					<p:commandButton value="#{testBean.question.questionOption2}"
+						actionListener="#{testBean.secondOptionChoose}"
+						style="width: 300px; text-align: left" />
+					<p:commandButton value="#{testBean.question.questionOption3}"
+						actionListener="#{testBean.thirdOptionChoose}"
+						style="width: 300px; text-align: left" />
+					<p:commandButton value="#{testBean.question.questionOption4}"
+						actionListener="#{testBean.fourthOptionChoose}"
+						style="width: 300px; text-align: left" />
+				</h:panelGrid>
+				<p:notificationBar position="bottom" effect="slide" id="topBar"
+					effectSpeed="slow" widgetVar="bar">
+					<h:outputText id="msg" value="#{testBean.message}"
+						style="font-size:36px;" />
+				</p:notificationBar>
+
+
+				<p:dialog header="Result Of Test" widgetVar="resultDialog"
+					id="resultDialog" closable="false" modal="true"
+					closeOnEscape="false" draggable="false" showEffect="blind"
+					hideEffect="explode" resizable="false">
+					<p:orderList value="#{testBean.resultList}" var="quest"
+						controlsLocation="none" itemLabel="#{quest}" itemValue="#{quest}" />
+					<f:facet name="footer">
+						<p:commandButton value="Devam"
+							actionListener="#{testBean.continueButton}" icon="ui-icon-check" />
+					</f:facet>
+				</p:dialog>
+			</h:form>
+		</ui:define>
+	</ui:composition>
+</h:body>
+</html>

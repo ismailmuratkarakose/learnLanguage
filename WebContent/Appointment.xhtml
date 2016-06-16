@@ -1,0 +1,93 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head></h:head>
+
+<h:body>
+	<ui:composition template="Template.xhtml">
+		<ui:define name="content">
+
+			<h:form id="form">
+				<p:messages id="messages" showDetail="true" autoUpdate="true" />
+				<h:panelGrid id="grid" columns="2" cellspacing="10px"
+					cellpadding="5px" columnClasses="label,value">
+					<p:outputLabel for="appointmentDate" value="Randevu gunu:" />
+					<p:calendar id="appointmentDate" mindate="" pattern="dd/MM/yyyy"
+						value="#{appoitnmentBean.appointmentDate}" required="true"
+						maxdate="#{appoitnmentBean.maxDate}" disabledWeekends="true"
+						requiredMessage="Lutfen tarih secin">
+						<p:ajax event="dateSelect"
+							listener="#{appoitnmentBean.testAppointmentDate}" />
+					</p:calendar>
+					<p:outputLabel for="appointmentStartTime" value="Baslama Zamani:" />
+					<p:calendar id="appointmentStartTime"
+						value="#{appoitnmentBean.appointmentStartTime}" pattern="HH:mm"
+						timeOnly="true" required="true" minHour="10" maxHour="22"
+						stepMinute="30" requiredMessage="Lutfen baslama saati secin">
+						<p:ajax event="dateSelect"
+							listener="#{appoitnmentBean.testAppointmentStartTime}" />
+					</p:calendar>
+
+					<p:outputLabel for="appointmentStartTime" value="Bitis Zamani:" />
+					<p:calendar id="appointmentEndTime"
+						value="#{appoitnmentBean.appointmentEndTime}" pattern="HH:mm"
+						timeOnly="true" required="true" minHour="10" maxHour="22"
+						stepMinute="30" requiredMessage="Lutfen bitis saati secin">
+						<p:ajax event="dateSelect"
+							listener="#{appoitnmentBean.testAppointmentEndTime}" />
+					</p:calendar>
+
+					<p:outputLabel for="textStudentName" value="Ogrenci adi:" />
+					<p:outputLabel id="textStudentName"
+						value="#{appoitnmentBean.studentName}" />
+					<p:outputLabel for="textStudentLevel" value="Ogrenci level:" />
+					<p:outputLabel id="textStudentLevel"
+						value="#{appoitnmentBean.studentLevel}" />
+
+					<p:outputLabel for="teacher" value="Ogretmen: " />
+					<p:selectOneMenu id="teacher"
+						value="#{appoitnmentBean.selectedTeacher}" style="width:150px">
+						<f:selectItem itemLabel="Ogretmen secin" noSelectionOption="true" />
+						<f:selectItems value="#{appoitnmentBean.teacherList}" />
+					</p:selectOneMenu>
+
+					<p:commandButton value="Randevu Al" id="btnAll" update="grid"
+						actionListener="#{appoitnmentBean.createAppointment}" />
+				</h:panelGrid>
+
+
+
+				<p:dialog header="Randevu Detaylari" widgetVar="randevuDialog"
+					id="randevuDialog" closable="false" modal="true"
+					closeOnEscape="false" draggable="false" showEffect="blind"
+					hideEffect="explode" resizable="false">
+					<h:outputText value="Ogrenci:" />
+					<h:outputText value="#{appoitnmentBean.studentName}" />
+					<p:separator></p:separator>
+					<h:outputText value="Ogretmen" />
+					<h:outputText value="#{appoitnmentBean.selectedTeacher}" />
+					<p:separator></p:separator>
+					<h:outputText value="Gun" />
+					<h:outputText value="#{appoitnmentBean.date}" />
+					<p:separator></p:separator>
+					<h:outputText value="Saat" />
+					<h:outputText value="#{appoitnmentBean.start}" />
+					<p:separator></p:separator>
+
+
+					<f:facet name="footer">
+						<p:commandButton value="Devam"
+							actionListener="#{appoitnmentBean.continueButton}"
+							icon="ui-icon-check" />
+					</f:facet>
+				</p:dialog>
+			</h:form>
+		</ui:define>
+	</ui:composition>
+</h:body>
+</html>

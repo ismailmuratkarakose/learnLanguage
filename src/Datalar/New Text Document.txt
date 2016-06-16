@@ -1,0 +1,69 @@
+
+
+public List<Currency> findAllCurrencies() {
+		List<Currency> resultList = generalDefinitionDao.findAllCurrencies();
+		return resultList;
+	}
+http://www.primefaces.org/showcase/ui/panel/notificationBar.xhtml
+http://www.primefaces.org/showcase/ui/panel/wizard.xhtml
+
+
+-----------------------------------------------
+<p:fieldset toggleable="true" toggleSpeed="500" legend="Register"
+			style="width:600px; margin:40px;" id="registerField">
+			<p:panel id="registerPanel" header="New User">
+			<p:messages id="msgs" />
+				<h:panelGrid columns="3" cellpadding="5">
+					<p:outputLabel for="firstname" value="Firstname:" />
+					<p:inputText id="firstname" value="#{registerBean.firstName}"
+						required="true" label="Firstname">
+						<f:validateLength minimum="2" />
+					</p:inputText>
+					<p:message for="firstname" display="icon" />
+
+					<p:outputLabel for="lastname" value="Lastname:" />
+					<p:inputText id="lastname" value="#{registerBean.lastName}"
+						label="Lastname" required="true">
+						<f:validateLength minimum="2" />
+						<p:ajax update="msgLastname" event="keyup" />
+					</p:inputText>
+					<p:message for="lastname" id="msgLastname" display="icon" />
+
+					<p:outputLabel for="useremail" value="E-mail:" />
+					<p:inputText id="useremail" value="#{registerBean.email}"
+						required="true" label="E-mail">
+						<f:validateLength minimum="2" />
+					</p:inputText>
+					<p:message for="useremail" display="icon" />
+
+					<h:outputLabel for="pwd1" value="Password : *" />
+					<p:password id="pwd1" value="#{registerBean.password}" match="pwd2"
+						label="Password " required="true" />
+					<h:outputLabel />
+					<h:outputLabel for="pwd2" value="Password Again: *" />
+					<p:password id="pwd2" value="#{registerBean.password}"
+						label="Password Again" required="true" />
+					<h:outputLabel />
+					<p:outputLabel for="console" value="Type:" />
+					<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+						<p:selectOneRadio id="console" required="true" value="#{registerBean.type}">
+							<f:selectItem itemLabel="Student" itemValue="S" />
+							<f:selectItem itemLabel="Teacher" itemValue="T" />
+						</p:selectOneRadio>
+						<p:message for="console" display="icon" />
+					</h:panelGrid>
+				</h:panelGrid>
+				<p:commandButton value="Save"
+					actionListener="#{registerBean.register}" icon="ui-icon-check" >
+					<f:ajax update="form" />
+					</p:commandButton>
+			</p:panel>
+		</p:fieldset>
+-----------------------------------------------
+
+
+
+.customTitleBar>.ui-panel-titlebar
+{background-color: #FFFFCC;}
+.customTitleBar>.ui-panel-content{
+background-color: white;}

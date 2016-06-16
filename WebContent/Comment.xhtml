@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head></h:head>
+
+<h:body>
+	<ui:composition template="Template.xhtml">
+		<ui:define name="content">
+			<h:form id="form">
+				<p:dataList value="#{commentBean.commentList}" var="cmmt" id="list"
+					type="ordered">
+					<f:facet name="header">
+          				  Comments
+        			</f:facet>
+        				#{cmmt.userName}, #{cmmt.comment}, #{cmmt.dateOfcomment}
+    			</p:dataList>
+				<p:separator></p:separator>
+				<h:outputLabel for="comment" value="Yorumunuzu buraya girin" />
+				<p:separator></p:separator>
+				<p:inputTextarea id="comment" rows="5" cols="30" counter="display"
+					maxlength="200" required="true;"
+					counterTemplate="{0} characters remaining." autoResize="false"
+					value="#{commentBean.commentStr}" />
+				<p:separator></p:separator>
+				<h:outputText id="display" />
+				<p:separator></p:separator>
+				<p:commandButton actionListener="#{commentBean.createComment}"
+					value="Yeni yorum">
+				</p:commandButton>
+			</h:form>
+		</ui:define>
+	</ui:composition>
+</h:body>
+</html>
